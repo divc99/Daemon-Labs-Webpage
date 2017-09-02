@@ -56,7 +56,7 @@ var Header = new Vue({
   }
 })
 
-items =  [
+HomePageItems =  [
   { 
     image: 'img/project/cabin.png',
     imagealt: 'Project',
@@ -93,6 +93,53 @@ items =  [
 
 ];
 
+ProjectPageItems =  [
+  { 
+    image: 'img/project/cabin.png',
+    imagealt: 'Project',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Project Title',
+    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
+    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
+    date: '22nd june 2017', 
+    domain: 'Software Development', 
+  },
+  { 
+    image: 'img/project/cake.png',
+    imagealt: 'Project',
+    modalhref: '#projectModal2',
+    modalhreftitle: 'projectModal2',
+    title: 'Project Title',
+    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
+    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
+    date: '22nd june 2017', 
+    domain: 'Software Development', 
+  },
+  { 
+    image: 'img/project/circus.png',
+    imagealt: 'Project',
+    modalhref: '#projectModal3',
+    modalhreftitle: 'projectModal3',
+    title: 'Project Title',
+    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
+    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
+    date: '22nd june 2017', 
+    domain: 'Software Development', 
+  },
+  { 
+    image: 'img/project/game.png',
+    imagealt: 'Project',
+    modalhref: '#projectModal3',
+    modalhreftitle: 'projectModal3',
+    title: 'Project Title',
+    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
+    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
+    date: '22nd june 2017', 
+    domain: 'Software Development', 
+  },
+
+];
 
 var About = new Vue({
   el: '#about',
@@ -102,23 +149,31 @@ var About = new Vue({
   }
 })
 
-
 var Project = new Vue({
   el: '#project',
   data: {
-    items:items,
-    computed: {
-      gethref: function(item) {
-          return ' ' + item.modalhref;
-      },
-  },
+    items:HomePageItems
   }
 })
 
 var ProjectModal = new Vue({
   el: '#projectmodal',
   data: {
-    items:items
+    items:HomePageItems
+  }
+})
+
+var ProjectPP = new Vue({
+  el: '#projectPP',
+  data: {
+    items:ProjectPageItems
+  }
+})
+
+var ProjectModalPP = new Vue({
+  el: '#projectmodalPP',
+  data: {
+    items:ProjectPageItems
   }
 })
 

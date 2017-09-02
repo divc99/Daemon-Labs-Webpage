@@ -1,5 +1,6 @@
 // Styling for the project section
-#project {
+.project {
+  margin-top: 4em;
   .project-item {
     right: 0;
     margin: 0 0 15px;
@@ -128,4 +129,3 @@
     text-align: center;  
   }
 } 
-  
