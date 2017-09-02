@@ -47,3 +47,99 @@
   });
 
 })(jQuery); // End of use strict
+
+var Header = new Vue({
+  el: 'header',
+  data: {
+    title: 'Daemon Labs',
+    subtitle: 'Web Developer - Graphic Artist - User Experience Designer'
+  }
+})
+
+items =  [
+  { 
+    image: 'img/project/cabin.png',
+    imagealt: 'Project',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Project Title',
+    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
+    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
+    date: '22nd june 2017', 
+    domain: 'Software Development', 
+  },
+  { 
+    image: 'img/project/cake.png',
+    imagealt: 'Project',
+    modalhref: '#projectModal2',
+    modalhreftitle: 'projectModal2',
+    title: 'Project Title',
+    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
+    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
+    date: '22nd june 2017', 
+    domain: 'Software Development', 
+  },
+  { 
+    image: 'img/project/circus.png',
+    imagealt: 'Project',
+    modalhref: '#projectModal3',
+    modalhreftitle: 'projectModal3',
+    title: 'Project Title',
+    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
+    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
+    date: '22nd june 2017', 
+    domain: 'Software Development', 
+  },
+
+];
+
+
+var About = new Vue({
+  el: '#about',
+  data: {
+    header: 'About',
+    content: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam massa arcu, laoreet eget leo in, pharetra tempus dolor. Mauris eu iaculis eros. Cras sed nisl quis turpis convallis mattis eget nec nulla. Fusce gravida urna sem, a cursus ante dapibus eu. Curabitur id consequat dui, quis pellentesque nisl. Praesent mollis in urna at commodo. Morbi a condimentum quam. Sed elementum ultrices pharetra. Duis suscipit odio velit, consequat dapibus dolor commodo facilisis. Maecenas massa dolor, malesuada sed aliquam sit amet, scelerisque ac odio. '
+  }
+})
+
+
+var Project = new Vue({
+  el: '#project',
+  data: {
+    items:items,
+    computed: {
+      gethref: function(item) {
+          return ' ' + item.modalhref;
+      },
+  },
+  }
+})
+
+var ProjectModal = new Vue({
+  el: '#projectmodal',
+  data: {
+    items:items
+  }
+})
+
+var Footer = new Vue({
+  el: 'footer',
+  data: {
+    location: '3481 Melrose Place<br>Beverly Hills, CA 90210',
+    copyright: 'Copyright &copy; Daemon Labs 2017',
+    items: [
+      { 
+        link: '#',
+        icon: 'fa fa-fw fa-facebook' 
+      },
+      { 
+        link: '#',
+        icon: 'fa fa-fw fa-envelope' 
+      },
+      { 
+        link: '#',
+        icon: 'fa fa-fw fa-github' 
+      },
+    ]
+  }
+})

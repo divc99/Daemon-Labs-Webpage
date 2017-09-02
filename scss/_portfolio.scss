@@ -1,9 +1,9 @@
-// Styling for the portfolio section
-#portfolio {
-  .portfolio-item {
+// Styling for the project section
+#project {
+  .project-item {
     right: 0;
     margin: 0 0 15px;
-    .portfolio-link {
+    .project-link {
       position: relative;
       display: block;
       max-width: 400px;
@@ -46,14 +46,14 @@
   }
 }
 @media(min-width:767px) {
-  #portfolio {
-    .portfolio-item {
+  #project {
+    .project-item {
       margin: 0 0 30px;
     }
   }
 }
 
-.portfolio-modal {
+.project-modal {
   .modal-dialog {
     max-width: 100%;
     min-height: 100%;
@@ -121,3 +121,11 @@
     opacity: 0;
   }
 }
+
+#about{
+  .content{
+    font-size: 1.5em;
+    text-align: center;  
+  }
+} 
+  
