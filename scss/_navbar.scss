@@ -24,7 +24,7 @@
       a.nav-link {
         color: white;
         &:hover {
-          color: $theme-success;
+          color: $navbar-hover;
           outline: none;
         }
         &:active,
@@ -43,8 +43,8 @@
     &:focus,
     &:hover {
       color: white;
-      border-color: $theme-success;
-      background-color: $theme-success;
+      border-color: $navbar-hover;
+      background-color: $navbar-hover;
     }
   }
 }
@@ -64,12 +64,12 @@
     .navbar-nav > li.nav-item > a.nav-link.active {
       color: white;
       border-radius: 3px;
-      background: $theme-success;
+      background: $navbar-hover;
       &:active,
       &:focus,
       &:hover {
         color: white;
-        background: $theme-success;
+        background: $navbar-hover;
       }
     }
   }
