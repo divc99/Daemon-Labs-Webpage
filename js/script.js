@@ -52,94 +52,82 @@ var Header = new Vue({
   el: 'header',
   data: {
     title: 'Daemon Labs',
-    subtitle: 'Web Developer - Graphic Artist - User Experience Designer'
+    subtitle: 'Web Development - Game Development - Machine Learning'
   }
 })
 
 HomePageItems =  [
   { 
     image: 'img/project/cabin.png',
-    imagealt: 'Project',
+    imagealt: 'game1',
     modalhref: '#projectModal1',
     modalhreftitle: 'projectModal1',
-    title: 'Project Title',
-    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
-    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
-    date: '22nd june 2017', 
-    domain: 'Software Development', 
+    title: 'Infinite Runner',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/sreevatsank1999/Project_M',
+    date: '21st july 2017', 
+    domain: 'Game Development', 
   },
   { 
     image: 'img/project/cake.png',
-    imagealt: 'Project',
-    modalhref: '#projectModal2',
-    modalhreftitle: 'projectModal2',
-    title: 'Project Title',
-    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
-    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
-    date: '22nd june 2017', 
-    domain: 'Software Development', 
+    imagealt: 'web1',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'AI Plays Mario',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/kpan2034/MarioFlow',
+    date: '21st july 2017', 
+    domain: 'Machine Learning', 
   },
   { 
     image: 'img/project/circus.png',
-    imagealt: 'Project',
-    modalhref: '#projectModal3',
-    modalhreftitle: 'projectModal3',
-    title: 'Project Title',
-    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
-    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
-    date: '22nd june 2017', 
-    domain: 'Software Development', 
+    imagealt: 'web2',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Infinite Runner',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/sreevatsank1999/Project_M',
+    date: '21st july 2017', 
+    domain: 'Game Development', 
   },
-
 ];
 
 ProjectPageItems =  [
-  { 
-    image: 'img/project/cabin.png',
-    imagealt: 'Project',
-    modalhref: '#projectModal1',
-    modalhreftitle: 'projectModal1',
-    title: 'Project Title',
-    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
-    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
-    date: '22nd june 2017', 
-    domain: 'Software Development', 
-  },
-  { 
-    image: 'img/project/cake.png',
-    imagealt: 'Project',
-    modalhref: '#projectModal2',
-    modalhreftitle: 'projectModal2',
-    title: 'Project Title',
-    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
-    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
-    date: '22nd june 2017', 
-    domain: 'Software Development', 
-  },
-  { 
-    image: 'img/project/circus.png',
-    imagealt: 'Project',
-    modalhref: '#projectModal3',
-    modalhreftitle: 'projectModal3',
-    title: 'Project Title',
-    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
-    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
-    date: '22nd june 2017', 
-    domain: 'Software Development', 
-  },
-  { 
-    image: 'img/project/game.png',
-    imagealt: 'Project',
-    modalhref: '#projectModal3',
-    modalhreftitle: 'projectModal3',
-    title: 'Project Title',
-    content: 'Use this area of the page to describe your project. The icon above is part of a free icon set by<a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!',
-    github: 'https://github.com/DaemonLab/OWP_Image_Viewer',
-    date: '22nd june 2017', 
-    domain: 'Software Development', 
-  },
-
-];
+  
+    { 
+      image: 'img/project/cabin.png',
+      imagealt: 'game1',
+      modalhref: '#projectModal1',
+      modalhreftitle: 'projectModal1',
+      title: 'Infinite Runner',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+      github: 'https://github.com/sreevatsank1999/Project_M',
+      date: '21st july 2017', 
+      domain: 'Game Development', 
+    },
+    { 
+      image: 'img/project/cake.png',
+      imagealt: 'web1',
+      modalhref: '#projectModal1',
+      modalhreftitle: 'projectModal1',
+      title: 'AI Plays Mario',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+      github: 'https://github.com/kpan2034/MarioFlow',
+      date: '21st july 2017', 
+      domain: 'Machine Learning', 
+    },
+    { 
+      image: 'img/project/circus.png',
+      imagealt: 'web2',
+      modalhref: '#projectModal1',
+      modalhreftitle: 'projectModal1',
+      title: 'Infinite Runner',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+      github: 'https://github.com/sreevatsank1999/Project_M',
+      date: '21st july 2017', 
+      domain: 'Game Development', 
+    },
+  ];
 
 var About = new Vue({
   el: '#about',
@@ -180,19 +168,19 @@ var ProjectModalPP = new Vue({
 var Footer = new Vue({
   el: 'footer',
   data: {
-    location: '3481 Melrose Place<br>Beverly Hills, CA 90210',
+    location: 'Indian Institute of Technology <br> Indore',
     copyright: 'Copyright &copy; Daemon Labs 2017',
     items: [
       { 
-        link: '#',
+        link: 'https://www.facebook.com/groups/485116264850626/',
         icon: 'fa fa-fw fa-facebook' 
       },
       { 
-        link: '#',
+        link: 'mailto:progclub@iiti.ac.in',
         icon: 'fa fa-fw fa-envelope' 
       },
       { 
-        link: '#',
+        link: 'https://github.com/DaemonLab',
         icon: 'fa fa-fw fa-github' 
       },
     ]
