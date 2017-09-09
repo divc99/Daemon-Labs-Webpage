@@ -4,6 +4,20 @@
   .project-item {
     right: 0;
     margin: 0 0 15px;
+    img{
+      height: 10em;
+      margin: auto;
+    }
+    h4{
+      color: rgba(119,136,153,1);
+    }
+    .img-container{
+      height: 15em;
+      text-align: center;
+      margin: auto;
+      background-color: rgba(119,136,153,0.2);
+      padding: 1em;
+    }
     .project-link {
       position: relative;
       display: block;
@@ -47,7 +61,7 @@
   }
 }
 @media(min-width:767px) {
-  #project {
+  .project {
     .project-item {
       margin: 0 0 30px;
     }

@@ -40,7 +40,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="weekly-chal.html">Weekly Challenges</a>
-            </li>
+              </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
             </li>
@@ -56,24 +56,34 @@
     </nav>
 
     <!-- project Grid Section -->
-    <section id="projectPP" class="project">
-      <div class="container" id="projectContainer">
-        <div class="row">
-          <div class="col-sm-4 project-item" v-for="item in items" :item="item">
-            <a class="project-link" :href="item.modalhref" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+    <section id="weeklychal" class="project">
+        <div class="container">
+            <h2 class="text-center">Weekly Challenges</h2>
+            <hr class="star-primary">
+            <div class="row">
+              <div class="col-sm-4 project-item" v-for="item in items" :item="item">
+                <a class="project-link" :href="item.modalhref" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <p class="img-container">
+                      <span class="about-item-title">{{item.title}}</span><br>
+                      <span class="about-item-author">{{item.author}}</span><br> 
+                      <span class="about-item-subtitle">{{item.subtitle}}</span><br>
+                      <a :href="item.link" class="about-item-profile">Profile</a>
+                  </p>
+                </a>
               </div>
-              <div class="img-container">
-                  <img class="img-fluid img-center" :src="item.image" alt="item.imagealt">
-                  <h4>{{item.title}}</h4>
-              </div>
-            </a>
-          </div>
+            </div>
+            <div class="col-lg-8 mx-auto text-center">
+                <a href="projects.html" class="btn btn-lg btn-info">
+                  <i class="fa fa-code"></i>
+                  See More
+                </a>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
@@ -117,7 +127,7 @@
     </div>
 
     <!-- project Modals -->
-    <div id="projectmodalPP" class="projectmodal">
+    <div id="projectmodal" class="projectmodal">
         <div v-for="item in items" class="project-modal modal fade" :id="item.modalhreftitle" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">

@@ -192,6 +192,17 @@ header.masthead {
   .project .project-item {
     right: 0;
     margin: 0 0 15px; }
+    .project .project-item img {
+      height: 10em;
+      margin: auto; }
+    .project .project-item h4 {
+      color: lightslategray; }
+    .project .project-item .img-container {
+      height: 15em;
+      text-align: center;
+      margin: auto;
+      background-color: rgba(119, 136, 153, 0.2);
+      padding: 1em; }
     .project .project-item .project-link {
       position: relative;
       display: block;
@@ -227,7 +238,7 @@ header.masthead {
     z-index: 2; }
 
 @media (min-width: 767px) {
-  #project .project-item {
+  .project .project-item {
     margin: 0 0 30px; } }
 
 .project-modal .modal-dialog {

@@ -39,6 +39,9 @@
               <a class="nav-link js-scroll-trigger" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="weekly-chal.html">Projects</a>
+              </li>
+            <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
@@ -76,7 +79,10 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" :src="item.image" alt="item.imagealt">
+              <div class="img-container">
+                  <img class="img-fluid img-center" :src="item.image" alt="item.imagealt">
+                  <h4>{{item.title}}</h4>
+              </div>
             </a>
           </div>
         </div>
@@ -87,6 +93,36 @@
             </a>
         </div>
       </div>
+    </section>
+
+    <section id="weeklychal" class="project">
+        <div class="container">
+            <h2 class="text-center">Weekly Challenges</h2>
+            <hr class="star-primary">
+            <div class="row">
+              <div class="col-sm-4 project-item" v-for="item in items" :item="item">
+                <a class="project-link" :href="item.modalhref" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <p class="img-container">
+                      <span class="about-item-title">{{item.title}}</span><br>
+                      <span class="about-item-author">{{item.author}}</span><br> 
+                      <span class="about-item-subtitle">{{item.subtitle}}</span><br>
+                      <a :href="item.link" class="about-item-profile">Profile</a>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 mx-auto text-center">
+                <a href="projects.html" class="btn btn-lg btn-info">
+                  <i class="fa fa-code"></i>
+                  See More
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -100,7 +136,7 @@
                   <figure class="snip1566 " v-for="item in members">
                       <img :src="item.image" :alt="item.imagealt" />
                       <figcaption><i>{{item.name}}</i></figcaption>
-                      <a href="item.link" target="_blank"></a>
+                      <a :href="item.link" target="_blank"></a>
                   </figure>
               </div>
             </div>
@@ -182,6 +218,51 @@
             </div>
           </div>
     </div>
+
+    <!-- Weekly Challenges Modals -->
+    <div id="weeklychalmodal" class="projectmodal">
+        <div v-for="item in items" class="project-modal modal fade" :id="item.modalhreftitle" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                    <div class="rl"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                        <h2>{{item.title}}</h2>
+                        <hr class="star-primary">
+                        <img class="img-fluid img-centered" :src="item.image" :alt="item.imagealt">
+                        <p v-html="item.content"></p>
+                        <ul class="list-inline item-details">
+                          <li>
+                              <strong>Domain: </strong>
+                              {{item.domain}}
+                          </li>
+                          <li>
+                              <strong>Date: </strong>
+                              {{item.date}}
+                          </li>
+                          <li>
+                              <strong>GitHub: </strong>
+                              <a :href="item.github" target="_blank">Repository</a>
+                          </li>
+                        </ul>
+                        <button class="btn btn-success" type="button" data-dismiss="modal">
+                          <i class="fa fa-times"></i>
+                          Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
 
     <!-- Vue Js Scripts-->
     <script src="vendor/vue/vue.min.js"></script>

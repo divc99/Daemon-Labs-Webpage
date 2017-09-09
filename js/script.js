@@ -64,7 +64,7 @@ var Header = new Vue({
 
 HomePageItems =  [
   { 
-    image: 'img/project/cabin.png',
+    image: 'img/project/game1.png',
     imagealt: 'game1',
     modalhref: '#projectModal1',
     modalhreftitle: 'projectModal1',
@@ -75,19 +75,144 @@ HomePageItems =  [
     domain: 'Game Development', 
   },
   { 
-    image: 'img/project/cake.png',
+    image: 'img/project/web1.svg',
     imagealt: 'web1',
     modalhref: '#projectModal1',
     modalhreftitle: 'projectModal1',
-    title: 'AI Plays Mario',
+    title: 'Q and A forum',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
-    github: 'https://github.com/kpan2034/MarioFlow',
+    github: 'https://github.com/Mohit-Nathrani/question-answer-site',
     date: '21st july 2017', 
-    domain: 'Machine Learning', 
+    domain: 'Full Stack Development', 
   },
   { 
-    image: 'img/project/circus.png',
-    imagealt: 'web2',
+    image: 'img/project/software1.svg',
+    imagealt: 'software1',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Rave Media Player',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/kanishkarj/rave',
+    date: '21st july 2017', 
+    domain: 'Software Development', 
+  },
+];
+
+Headmembers = [
+  {
+    image:"img/members/vineetshah.jpe",
+    imagealt:"vineetshah",
+    name:"Vineet Shah",
+    link:"#"
+  },
+  {
+    image:"img/members/mohitmohta.jpg",
+    imagealt:"mohitmohta",
+    name:"Mohit Mohta",
+    link:"#"
+  },
+  {
+    image:"img/members/kunalgupta.jpeg",
+    imagealt:"kunalgupta",
+    name:"Kunal Gupta",
+    link:"#"
+  },
+  {
+    image:"img/members/adityajain.jpe",
+    imagealt:"adityajain",
+    name:"Aditya Jain",
+    link:"#"
+  },
+];
+
+WeeklyChallenges=[
+  {
+    date:"10th sept 2017",
+    items:[
+      {
+        modalhref: '#weeklychalModal1',
+        modalhreftitle: 'weeklychalModal1',
+        title:"Lorem Ipsum",
+        subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        author:"Lipsum",
+        content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
+      },
+      {
+        modalhref: '#weeklychalModal2',
+        modalhreftitle: 'weeklychalModal2',
+        title:"Lorem Ipsum",
+        subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        author:"Lipsum",
+        content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
+      },
+    ]
+  },
+  {
+    date:"10th sept 2017",
+    items:[
+      {
+        title:"Lorem Ipsum",
+        subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        author:"Lipsum",
+        content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
+      },
+      {
+        title:"Lorem Ipsum",
+        subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        author:"Lipsum",
+        content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
+      },
+    ]
+  },
+]
+
+members = [
+  {
+    image:"img/members/vineetshah.jpe",
+    imagealt:"vineetshah",
+    name:"Vineet Shah",
+    domain:"Competitive Coding",
+    desig:"BTech 3nd Year",
+    link:"#"
+  },
+  {
+    image:"img/members/mohitmohta.jpg",
+    imagealt:"mohitmohta",
+    name:"Mohit Mohta",
+    domain:"Software Development",
+    desig:"BTech 3nd Year",
+    link:"#"
+  },
+  {
+    image:"img/members/kunalgupta.jpeg",
+    imagealt:"kunalgupta",
+    name:"Kunal Gupta",
+    domain:"Web Security",
+    desig:"BTech 3nd Year",
+    link:"#"
+  },
+  {
+    image:"img/members/adityajain.jpe",
+    imagealt:"adityajain",
+    name:"Aditya Jain",
+    domain:"Machine Learning",
+    desig:"BTech 3nd Year",
+    link:"#"
+  },
+  {
+    image:"img/members/kanishkarj.jpe",
+    imagealt:"kanishkarj",
+    name:"Kanishkar J",
+    domain:"Full Stack Development",
+    desig:"BTech 2nd Year",
+    link:"https://github.com/kanishkarj",
+  },
+];
+
+ProjectPageItems =  [
+  { 
+    image: 'img/project/game1.png',
+    imagealt: 'game1',
     modalhref: '#projectModal1',
     modalhreftitle: 'projectModal1',
     title: 'Infinite Runner',
@@ -96,81 +221,72 @@ HomePageItems =  [
     date: '21st july 2017', 
     domain: 'Game Development', 
   },
-];
-
-Headmembers = [
-  {
-    image:"img/members/kanishkarj.jpe",
-    imagealt:"kanishkarj",
-    name:"Kanishkar J",
-    link:"https://github.com/kanishkarj"
+  { 
+    image: 'img/project/web1.svg',
+    imagealt: 'web1',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Q and A forum',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/Mohit-Nathrani/question-answer-site',
+    date: '21st july 2017', 
+    domain: 'Full Stack Development', 
   },
-  {
-    image:"img/members/kanishkarj.jpe",
-    imagealt:"kanishkarj",
-    name:"Kanishkar J",
-    link:"https://github.com/kanishkarj"
+  { 
+    image: 'img/project/software1.svg',
+    imagealt: 'software1',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Rave Media Player',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/kanishkarj/rave',
+    date: '21st july 2017', 
+    domain: 'Software Development', 
   },
-  {
-    image:"img/members/kanishkarj.jpe",
-    imagealt:"kanishkarj",
-    name:"Kanishkar J",
-    link:"https://github.com/kanishkarj"
+  { 
+    image: 'img/project/web2.svg',
+    imagealt: 'web1',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Local Quora',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/Harsh860/IITI-SOC',
+    date: '21st july 2017', 
+    domain: 'Full Stack Development', 
   },
-  {
-    image:"img/members/kanishkarj.jpe",
-    imagealt:"kanishkarj",
-    name:"Kanishkar J",
-    link:"https://github.com/kanishkarj"
+  { 
+    image: 'img/project/web3.svg',
+    imagealt: 'web1',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Query',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/kpranav1998/soc-project',
+    date: '21st july 2017', 
+    domain: 'Full Stack Development', 
   },
-];
-
-members = [
-  {
-    image:"img/members/kanishkarj.jpe",
-    imagealt:"kanishkarj",
-    name:"Kanishkar J",
-    domain:"Full Stack Development",
-    desig:"BTech 2nd Year",
-    link:"https://github.com/kanishkarj",
-
+  { 
+    image: 'img/project/software2.svg',
+    imagealt: 'Software2',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Javafx Media Player',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/eltoro007/MediaPlayer',
+    date: '21st july 2017', 
+    domain: 'Software Development', 
   },
-];
-
-ProjectPageItems =  [
-    { 
-      image: 'img/project/cabin.png',
-      imagealt: 'game1',
-      modalhref: '#projectModal1',
-      modalhreftitle: 'projectModal1',
-      title: 'Infinite Runner',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
-      github: 'https://github.com/sreevatsank1999/Project_M',
-      date: '21st july 2017', 
-      domain: 'Game Development', 
-    },
-    { 
-      image: 'img/project/cake.png',
-      imagealt: 'web1',
-      modalhref: '#projectModal1',
-      modalhreftitle: 'projectModal1',
-      title: 'AI Plays Mario',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
-      github: 'https://github.com/kpan2034/MarioFlow',
-      date: '21st july 2017', 
-      domain: 'Machine Learning', 
-    },
-    { 
-      image: 'img/project/circus.png',
-      imagealt: 'web2',
-      modalhref: '#projectModal1',
-      modalhreftitle: 'projectModal1',
-      title: 'Infinite Runner',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
-      github: 'https://github.com/sreevatsank1999/Project_M',
-      date: '21st july 2017', 
-      domain: 'Game Development', 
-    },
+  { 
+    image: 'img/project/ml1.svg',
+    imagealt: 'ml1',
+    modalhref: '#projectModal1',
+    modalhreftitle: 'projectModal1',
+    title: 'Computer learns to play mario.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum convallis felis, id ultrices ipsum egestas et. Vestibulum eu consequat est. Pellentesque ultrices varius vestibulum. Ut eget massa nisi. Vestibulum augue enim, imperdiet rutrum libero a, feugiat tristique velit. Aliquam sollicitudin sit amet neque et aliquam. Aliquam vestibulum orci in elit lacinia, a suscipit libero euismod.',
+    github: 'https://github.com/Mohit-Nathrani/question-answer-site',
+    date: '21st july 2017', 
+    domain: 'Machine Learning', 
+  },
 ];
 
 var About = new Vue({
@@ -196,10 +312,24 @@ var Project = new Vue({
   }
 })
 
+var WeeklyChallenges = new Vue({
+  el: '#weeklychal',
+  data: {
+    items: WeeklyChallenges[1].items,
+  }
+})
+
 var ProjectModal = new Vue({
   el: '#projectmodal',
   data: {
     items:HomePageItems
+  }
+})
+
+var weeklychalmodal = new Vue({
+  el: '#weeklychalmodal',
+  data: {
+    items:WeeklyChallenges[1].items,
   }
 })
 
