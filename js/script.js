@@ -48,13 +48,19 @@
 
 })(jQuery); // End of use strict
 
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
 var Header = new Vue({
   el: 'header',
   data: {
-    title: 'Daemon Labs',
-    subtitle: 'Web Development - Game Development - Machine Learning'
+    title: 'The Programming club',
+    subtitle: 'Indian Institute of Technology, Indore'
   }
-})
+});
 
 HomePageItems =  [
   { 
@@ -92,8 +98,46 @@ HomePageItems =  [
   },
 ];
 
+Headmembers = [
+  {
+    image:"img/members/kanishkarj.jpe",
+    imagealt:"kanishkarj",
+    name:"Kanishkar J",
+    link:"https://github.com/kanishkarj"
+  },
+  {
+    image:"img/members/kanishkarj.jpe",
+    imagealt:"kanishkarj",
+    name:"Kanishkar J",
+    link:"https://github.com/kanishkarj"
+  },
+  {
+    image:"img/members/kanishkarj.jpe",
+    imagealt:"kanishkarj",
+    name:"Kanishkar J",
+    link:"https://github.com/kanishkarj"
+  },
+  {
+    image:"img/members/kanishkarj.jpe",
+    imagealt:"kanishkarj",
+    name:"Kanishkar J",
+    link:"https://github.com/kanishkarj"
+  },
+];
+
+members = [
+  {
+    image:"img/members/kanishkarj.jpe",
+    imagealt:"kanishkarj",
+    name:"Kanishkar J",
+    domain:"Full Stack Development",
+    desig:"BTech 2nd Year",
+    link:"https://github.com/kanishkarj",
+
+  },
+];
+
 ProjectPageItems =  [
-  
     { 
       image: 'img/project/cabin.png',
       imagealt: 'game1',
@@ -127,13 +171,21 @@ ProjectPageItems =  [
       date: '21st july 2017', 
       domain: 'Game Development', 
     },
-  ];
+];
 
 var About = new Vue({
   el: '#about',
   data: {
     header: 'About',
-    content: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam massa arcu, laoreet eget leo in, pharetra tempus dolor. Mauris eu iaculis eros. Cras sed nisl quis turpis convallis mattis eget nec nulla. Fusce gravida urna sem, a cursus ante dapibus eu. Curabitur id consequat dui, quis pellentesque nisl. Praesent mollis in urna at commodo. Morbi a condimentum quam. Sed elementum ultrices pharetra. Duis suscipit odio velit, consequat dapibus dolor commodo facilisis. Maecenas massa dolor, malesuada sed aliquam sit amet, scelerisque ac odio. '
+    members: Headmembers
+  }
+})
+
+var AboutList = new Vue({
+  el: '#aboutlist',
+  data: {
+    header: 'About',
+    members: members
   }
 })
 

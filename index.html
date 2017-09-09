@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Daemon Labs</title>
+    <title>The Programming club</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Daemon Labs</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">The Programming club</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -42,7 +42,7 @@
                 <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                <a class="nav-link js-scroll-trigger" href="about.html">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#footer">Contact</a>
@@ -58,7 +58,6 @@
         <img class="img-fluid" src="img/profile.png" alt="">
         <div class="intro-text">
           <span class="name">{{title}}</span>
-          <hr class="star-light">
           <span class="skills">{{subtitle}}</span>
         </div>
       </div>
@@ -67,7 +66,7 @@
     <!-- project Grid Section -->
     <section id="project" class="project">   
       <div class="container">
-        <h2 class="text-center">project</h2>
+        <h2 class="text-center">Projects</h2>
         <hr class="star-primary">
         <div class="row">
           <div class="col-sm-4 project-item" v-for="item in items" :item="item">
@@ -96,10 +95,15 @@
           <h2 class="text-center">About</h2>
           <hr class="star-light">
           <div class="row content">
-            <p>
-                {{content}}
-            </p>
-          </div>
+            <div class="row">
+              <div class="row snip-container">
+                  <figure class="snip1566 " v-for="item in members">
+                      <img :src="item.image" :alt="item.imagealt" />
+                      <figcaption><i>{{item.name}}</i></figcaption>
+                      <a href="item.link" target="_blank"></a>
+                  </figure>
+              </div>
+            </div>
         </div>
     </section>
   
@@ -118,18 +122,10 @@
               <ul class="list-inline">
                   <li class="list-inline-item" v-for="item in items">
                       <a class="btn-social btn-outline" :href="item.link">
-                        <i :class="item.icon" aria-hidden="true"></i>
+                        <i :class="item.icon" aria-hidden="true" target="_blank"></i>
                       </a>
                   </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-below">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12" v-html="copyright">
             </div>
           </div>
         </div>
