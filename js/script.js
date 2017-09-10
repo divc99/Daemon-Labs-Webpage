@@ -123,26 +123,32 @@ Headmembers = [
     name:"Aditya Jain",
     link:"#"
   },
+  {
+    image:"img/members/kunalgupta.jpeg",
+    imagealt:"kunalgupta",
+    name:"Kunal Gupta",
+    link:"#"
+  },
 ];
 
 WeeklyChallenges=[
   {
-    date:"10th sept 2017",
+    date:"11th sept 2017",
     items:[
       {
-        modalhref: '#weeklychalModal1',
-        modalhreftitle: 'weeklychalModal1',
         title:"Lorem Ipsum",
         subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
         author:"Lipsum",
+        modalhref: '#weeklychalModal1',
+        modalhreftitle: 'weeklychalModal1',
         content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
       },
       {
-        modalhref: '#weeklychalModal2',
-        modalhreftitle: 'weeklychalModal2',
         title:"Lorem Ipsum",
         subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
         author:"Lipsum",
+        modalhref: '#weeklychalModal2',
+        modalhreftitle: 'weeklychalModal2',
         content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
       },
     ]
@@ -154,12 +160,16 @@ WeeklyChallenges=[
         title:"Lorem Ipsum",
         subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
         author:"Lipsum",
+        modalhref: '#weeklychalModal1',
+        modalhreftitle: 'weeklychalModal1',
         content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
       },
       {
         title:"Lorem Ipsum",
         subtitle:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
         author:"Lipsum",
+        modalhref: '#weeklychalModal2',
+        modalhreftitle: 'weeklychalModal2',
         content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum arcu ut justo pulvinar, at placerat tortor rutrum. Pellentesque sodales est id orci elementum bibendum. In hac habitasse platea dictumst. In sagittis ut dolor a ornare. Vivamus feugiat imperdiet lorem ac lobortis. Donec mattis orci augue, accumsan pretium metus sagittis at. Phasellus mattis sagittis aliquam. Duis justo sem, semper in leo vel, gravida ullamcorper nulla. Morbi nisi orci, eleifend id sapien vehicula, venenatis ornare urna. ",
       },
     ]
@@ -312,24 +322,10 @@ var Project = new Vue({
   }
 })
 
-var WeeklyChallenges = new Vue({
-  el: '#weeklychal',
-  data: {
-    items: WeeklyChallenges[1].items,
-  }
-})
-
 var ProjectModal = new Vue({
   el: '#projectmodal',
   data: {
     items:HomePageItems
-  }
-})
-
-var weeklychalmodal = new Vue({
-  el: '#weeklychalmodal',
-  data: {
-    items:WeeklyChallenges[1].items,
   }
 })
 
@@ -344,6 +340,34 @@ var ProjectModalPP = new Vue({
   el: '#projectmodalPP',
   data: {
     items:ProjectPageItems
+  }
+})
+
+var weeklychal = new Vue({
+  el: '#weeklychal',
+  data: {
+    items:WeeklyChallenges[1].items
+  }
+})
+
+var weeklychalmodal = new Vue({
+  el: '#weeklychalmodal',
+  data: {
+    items:WeeklyChallenges[1].items
+  }
+})
+
+var weeklychalWCP = new Vue({
+  el: '#weeklychalWCP',
+  data: {
+    items:WeeklyChallenges
+  }
+})
+
+var weeklychalmodalWCP = new Vue({
+  el: '#weeklychalmodalWCP',
+  data: {
+    items:WeeklyChallenges[1].items
   }
 })
 
